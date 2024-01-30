@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Card({width,downtext,downpara,background,hover}) {
   return (
-    <div className={`${background} group/item hover:${hover} text-white p-5 ${width} rounded-[20px] min-h-[27rem] flex flex-col justify-between transition-colors`}>
+    <div className={`${background} group/item ${downpara ? "hover:bg-zinc-700":"hover:bg-violet-600"} text-white p-5 ${width} rounded-[20px] min-h-[27rem] flex flex-col justify-between transition-colors`}>
         <div className='heading w-full group-hover/item:px-1 transition-all ease-linear'>
             <div className='flex items-center justify-between'>
             <h1 className='text-sm'>One Heading</h1>
